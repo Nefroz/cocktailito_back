@@ -8,10 +8,6 @@ const async = require("async");
 const app = express();
 
 // let sequelize = require('./core/connection');
-// const modelUser = require('./core/User.js');
-// const modelEqui = require('./core/Equi.js');
-// const modelReserv = require('./core/Reserv.js');
-// const modelDetail = require('./core/Detail.js');
 /*db.sequelize.sync({alter:true})*/
 // db.sequelize.sync({force:true})
 

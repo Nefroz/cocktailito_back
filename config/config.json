@@ -1,23 +1,23 @@
 {
   "development": {
-    "username": "root",
-    "password": "stevendemoor",
+    "username": "",
+    "password": "",
     "database": "cocktailito",
     "host": "127.0.0.1",
     "dialect": "mysql",
     "operatorsAliases": false
   },
   "test": {
-    "username": "root",
-    "password": "stevendemoor",
+    "username": "",
+    "password": "",
     "database": "cocktailito",
     "host": "127.0.0.1",
     "dialect": "mysql",
     "operatorsAliases": false
   },
   "production": {
-    "username": "root",
-    "password": "stevendemoor",
+    "username": "",
+    "password": "",
     "database": "cocktailito",
     "host": "127.0.0.1",
     "dialect": "mysql",

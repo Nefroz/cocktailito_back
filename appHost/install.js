@@ -1,8 +1,8 @@
-
 const logger = require('tracer').console({});
 const async = require("async");
 const moment = require("moment");
 const Ressources = require("../domain/ressources.js");
+const Stock = require("../domain/stock.js");
 const Cocktails = require("../domain/cocktails.js");
 const Users = require("../domain/users.js");
 const Views = require("../domain/views.js");
@@ -111,6 +111,16 @@ module.exports = [
                             cocktailsUsers.push(res)
                         }
                         req.db.Cocktailsusers.bulkCreate(cocktailsUsers, {req : req}).then( () => {
+                            c(null)
+                        })
+                    },
+                    c => {
+                        const stock = []
+                        for(var i=0; i<50; i++) {
+                            const res = new Stock().random()
+                            stock.push(res)
+                        }
+                        req.db.Stock.bulkCreate(stock, {req : req}).then( () => {
                             c(null)
                         })
                     }
